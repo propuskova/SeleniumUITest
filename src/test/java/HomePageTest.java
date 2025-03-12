@@ -24,6 +24,7 @@ public class HomePageTest {
     void setup() {
         driver = new ChromeDriver(); //запускает браузер
         driver.get(BASE_URL);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
     }
 
     @AfterEach
